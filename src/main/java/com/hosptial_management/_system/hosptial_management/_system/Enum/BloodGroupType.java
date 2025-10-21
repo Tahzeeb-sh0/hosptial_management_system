@@ -1,4 +1,4 @@
-package com.hosptial_management._system.hosptial_management._system.Type;
+package com.hosptial_management._system.hosptial_management._system.Enum;
 
 public enum BloodGroupType {
     A_positive,

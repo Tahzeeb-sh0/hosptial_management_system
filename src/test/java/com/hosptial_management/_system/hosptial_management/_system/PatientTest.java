@@ -3,7 +3,6 @@ package com.hosptial_management._system.hosptial_management._system;
 import com.hosptial_management._system.hosptial_management._system.Entity.Patient;
 import com.hosptial_management._system.hosptial_management._system.Repo.PatientRepo;
 import com.hosptial_management._system.hosptial_management._system.Service.PatientService;
-import com.hosptial_management._system.hosptial_management._system.Type.BloodGroupType;
 import lombok.ToString;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

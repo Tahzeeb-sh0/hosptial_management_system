@@ -1,7 +1,7 @@
 package com.hosptial_management._system.hosptial_management._system.Repo;
 
 import com.hosptial_management._system.hosptial_management._system.Entity.Patient;
-import com.hosptial_management._system.hosptial_management._system.Type.BloodGroupType;
+import com.hosptial_management._system.hosptial_management._system.Enum.BloodGroupType;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

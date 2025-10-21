@@ -1,6 +1,6 @@
 package com.hosptial_management._system.hosptial_management._system.Entity;
 
-import com.hosptial_management._system.hosptial_management._system.Type.BloodGroupType;
+import com.hosptial_management._system.hosptial_management._system.Enum.BloodGroupType;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDate;
