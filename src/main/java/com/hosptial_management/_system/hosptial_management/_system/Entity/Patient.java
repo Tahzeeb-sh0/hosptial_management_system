@@ -4,6 +4,7 @@ import com.hosptial_management._system.hosptial_management._system.Type.BloodGro
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(
@@ -39,6 +40,10 @@ public class Patient {
     private String oxygenLevel;
 
     @OneToOne
+    @JoinColumn(name = "patient_insurance_id")//owning side
     private Insurance insurance;
+
+    @OneToMany(mappedBy = "patient")
+    private List<Appointment> appointments;
 
 }

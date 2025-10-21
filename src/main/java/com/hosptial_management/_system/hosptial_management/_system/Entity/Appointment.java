@@ -4,29 +4,26 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Insurance {
+@Data
+public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false,unique = true,length = 50)
-    private String policyNumber;
+    @Column(nullable = false)
+    private LocalDateTime appointtmentTime;
 
-    @Column(nullable = false,length = 100)
-    private String provider;
+    @Column(length = 500)
+    private String reason;
 
-    @CreationTimestamp
-    @Column(updatable = false)
-    private LocalDateTime createdAt;
-
-    @OneToOne(mappedBy = "insurance")
+    @ManyToOne
+    @JoinColumn(name = "patient_id",nullable = false)
     private Patient patient;
+
 }
